@@ -66,7 +66,7 @@ print()
 print(LOGIN_URL)
 print()
 print("➡️  After logging in, when the page shows \"redirect\", copy the URL from the address bar and paste it here:")
-code_url_s = input("> ")
+code_url_s = input(">https://id.sonyentertainmentnetwork.com/id/management_ca/?entry=account_info&pr_referer=cam&ui=pr&cid=6fe47b12-9f2c-4b6b-bc5c-a0c18b3435dd#/p/personal_info/list?state=cam_9c65c5d96051a948326715d6cfac1ae&cid=6fe47b12-9f2c-4b6b-bc5c-a0c18b3435dd&entry=account_info ")
 code_url = urlparse(code_url_s)
 query = parse_qs(code_url.query)
 if "code" not in query or len(query["code"]) == 0 or len(query["code"][0]) == 0:
